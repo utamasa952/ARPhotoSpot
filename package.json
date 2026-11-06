@@ -1,0 +1,26 @@
+{
+  "name": "vrm-ar-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@types/three": "^0.149.0",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "gh-pages": "^6.3.0",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "@pixiv/three-vrm": "^1.0.10",
+    "@pixiv/three-vrm-animation": "^3.5.5",
+    "mind-ar": "^1.2.5",
+    "three": "^0.149.0"
+  }
+}

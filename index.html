@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VRM WebAR Photo Spot</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: sans-serif; }
+    #ar-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: -1; }
+    #ui-container { position: absolute; bottom: 20px; width: 100%; text-align: center; z-index: 10; }
+    button { padding: 10px 20px; margin: 0 5px; font-size: 16px; border-radius: 8px; border: none; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.3); cursor: pointer; }
+    button:active { background: #eee; }
+  </style>
+</head>
+<body>
+  <div id="ar-container"></div>
+  <div id="ui-container">
+    <button id="btn-pose1">ポーズ1 (待機)</button>
+    <button id="btn-pose2">ポーズ2 (挙手)</button>
+    <button id="btn-capture">📸 撮影</button>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
